@@ -1,7 +1,7 @@
 (function () {
 
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "WizzardDestroyer";
 
     //Define our function responsible for extending the bot.
     function extend() {
@@ -58,7 +58,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "basicBot",
         language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/WizzardDestroyer/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
@@ -96,7 +96,7 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 5,
         motd: "Temporary Message of the Day",
         filterChat: true,
@@ -106,8 +106,8 @@
         rulesLink: null,
         themeLink: null,
         fbLink: null,
-        youtubeLink: null,
-        website: null,
+        youtubeLink: "http://www.youtube.com/WizzardDestroyer/",
+        website: "http://www.wizzardgamer.com/",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
@@ -120,6 +120,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/WizzardDestroyer/basicBot/master/basicBot.js", extend);
 
 }).call(this);
